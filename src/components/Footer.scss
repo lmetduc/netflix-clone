@@ -1,0 +1,32 @@
+.footer {
+    color:grey;
+    padding: 32px 16px;
+    font-size: 12px;
+    a {
+        text-decoration: none;
+        color: inherit
+    }
+    &__socials {
+        margin-left: -4px;
+        padding:16px 0;
+        .footer__social {
+            margin-right: 20px;
+            svg {
+                font-size: 36px;
+            }
+        }
+    }
+    &__links {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        .footer__link {
+            flex: 1 0 50%;
+            margin-bottom: 16px;
+            @media screen and (min-width:768px) {
+                flex: 1 0 25%
+            }
+        }
+
+    }
+}
